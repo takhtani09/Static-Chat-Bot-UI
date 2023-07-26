@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="efW-Ey-NnD">
-                                <rect key="frame" x="0.0" y="44" width="414" height="726"/>
+                                <rect key="frame" x="0.0" y="120" width="414" height="650"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="92" id="rdW-K3-37S" customClass="ChatTBVC" customModule="Chat_Bot" customModuleProvider="target">
@@ -79,14 +79,22 @@
                                     <constraint firstItem="Ait-aj-BdG" firstAttribute="width" secondItem="dNA-kt-31N" secondAttribute="width" multiplier="0.7" constant="7.2000000000000455" id="gd8-3E-5Qg"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat Bot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLG-2q-3PY">
+                                <rect key="frame" x="146" y="64" width="122.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="efW-Ey-NnD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2qK-FN-1jM"/>
+                            <constraint firstItem="efW-Ey-NnD" firstAttribute="top" secondItem="LLG-2q-3PY" secondAttribute="bottom" constant="20" id="0dS-JH-DZR"/>
                             <constraint firstItem="dNA-kt-31N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="7C3-vt-1P2"/>
                             <constraint firstItem="dNA-kt-31N" firstAttribute="top" secondItem="efW-Ey-NnD" secondAttribute="bottom" constant="20" id="TSt-zG-vbf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="efW-Ey-NnD" secondAttribute="trailing" id="d2n-Nx-Djj"/>
+                            <constraint firstItem="LLG-2q-3PY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="eji-e5-4NK"/>
+                            <constraint firstItem="LLG-2q-3PY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lDi-ko-470"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dNA-kt-31N" secondAttribute="trailing" constant="30" id="mbS-hi-IHg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dNA-kt-31N" secondAttribute="bottom" constant="30" id="vWW-SW-p6e"/>
                             <constraint firstItem="efW-Ey-NnD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zS7-4P-eYM"/>
